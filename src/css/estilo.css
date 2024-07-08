@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    color: #0000008c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container-topo {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+.container-logo-links {
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.links-topo {
+    margin-left: 15px;
+    padding: 10px;
+}
+.links-topo a {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.links-topo a:hover {
+    color: #00000f;
+}
+
+
+
+.banner {
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../imagens/recepcao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.banner h1 {
+    margin-left: 35px;
+    padding: 20px;
+    font-size: 45px;
+    color: #fff;
+}
+
+.container-sobre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    padding: 15px;
+    width: 100%;
+    height: 50%;    
+}
+.container-sobre h2 {
+    padding: 10px;
+    margin: 15px;
+}
+.container-lateral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.container-listas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.container-listas h3 {
+    margin: 20px auto;
+    padding: 10px;
+}
+.listas ul {
+    margin-left: 0;
+}
+
+
+
+.container-cards {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.container-cards h4, p {
+    margin: 10px auto;
+    padding: 10px;
+}
+.container-tres-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-tres-cards img  {
+    width: 100%;
+}
+
+.container-info {
+    padding: 20px;
+    height: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-imagem figcaption {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.container-imagem {
+   border-radius: 3px;
+   box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+   margin: 20px;
+   width: calc(100% / 3 - 40px);
+}
+
+
+.container-horarios {
+    text-align: center;
+    margin-top: 20px;
+
+}
+.container-link-horarios {
+    background-color: aqua;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.contato {
+    text-align: center;
+    padding: 20px;
+}
+.container-contato iframe {
+    width: 100%;
+}
+
+
+footer  {
+    background-color: #00cad1;
+    padding: 10px 20px;
+    text-align: center;
+}
+.container-logotipo {
+    width: 20px;
+    height: 20px;
+}
+.texto-cor {
+    font-weight: bold;
+    color: #fff;
+}
+footer p {
+    color: #fff;
+}
+
+/* ADICIONANDO MEDIAS QUERYS */
+/* PARA RESOLUÇÃO DE ATÉ 425 PIXELS
+(screen and) */
+@media screen and (min-width:340px) and (max-width: 425px) {
+    .container-topo div { 
+        flex-direction: column;
+    }
+    .container-logo-links a {
+        margin: 10px 0;
+        display: inline-block;
+    }
+    .links-topo {
+        width: 100%;
+        border-top: 1px solid #009fa5;
+        justify-content: space-around;
+    }
+    .banner {
+        height: 200px;
+    }
+    .banner h1 {
+        font-size: 20px;
+        font-weight: normal;
+        width: 100%;
+    }
+    .container-lateral img {
+        display: none;
+    }
+    .container-tres-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+/* PARA RESOLUÇÃO DE 426 PIXELS ATÉ 768 PIXELS */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+    .banner h1 {
+        font-size: 20px;
+        font-weight: normal;
+        width: 100%;
+        margin-left: 0;
+    }
+    .container-lateral img {
+        display: none;
+    }
+    .container-tres-cards {
+        justify-content: center;
+    }
+    .container-imagem {
+        width: calc(100% / 2 - 40px);
+    }
+}
+
+/* PARA RESOLUÇÃO DE 769 PIXELS ATÉ 1024 PIXELS */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .banner {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .banner {
+        height: 500px;
+    }
+} 

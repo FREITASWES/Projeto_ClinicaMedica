@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #0000008c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.container-logotipo {
+    width: 20px;
+    height: 20px;
+}
+.container-links-inicial a {
+    margin: 10px;
+    text-decoration: none;
+}
+.container-cinco-links {
+    border-bottom: 2px solid aqua;
+}
